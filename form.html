@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #login-page {
+        width: 1000px;
+        height: 1200px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+          125deg,
+          rgb(212, 30, 30),
+          rgb(102, 102, 210)
+        );
+      }
+      #login-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 850px;
+        height: 1000px;
+        background-color: azure;
+        border-radius: 15px;
+      }
+      h2 {
+        font-size: 85px;
+        position: relative;
+        top: -30px;
+        left: 100px;
+      }
+      label {
+        font-size: 42px;
+        font-weight: 400;
+      }
+       input {
+        margin: 45px 25px;
+        border: none;
+        width: 300px;
+        height: 60px;
+        font-size: 45px;
+      }
+      #login-item button {
+        margin: 25px;
+        width: 500px;
+        height: 45px;
+        border-radius: 25px;
+        font-size: x-large;
+        font-weight: 700;
+        background-color: rgb(162, 143, 225);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="login-page">
+      <div id="login-item">
+        <form action="/form" method="post" autocomplete="off">
+          <h2>Login</h2>
+          <label for="username">
+            User-name <input type="text" name="name" id="" />
+          </label>
+          <hr />
+          <label for="username">
+            email <input type="email" name="email" id="" />
+          </label>
+          <hr />
+          <label for="pass">
+            passward <input type="password" name="pass" id="" />
+          </label>
+          <hr />
+          <button type="submit">Login</button>
+          <button type="reset">reset</button>
+
+          <h3>Not a Member ?</h3>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
